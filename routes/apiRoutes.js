@@ -5,7 +5,7 @@ const router = require("express").Router();
 
 // To read db.json file and return all saved notes as JSON
 router.get("/api/notes", (req,res) => {
-const data = fs.readFileSync("./db.db.json");
+const data = fs.readFileSync("./db/db.json");
 res.json(JSON.parse(data));
 });
 
@@ -15,11 +15,9 @@ res.json(JSON.parse(data));
 // });
 
 
-
 router.post("/api/notes", (req,res) => {
 const notes = JSON.parse(fs.readFileSync("./db/db.json"));
-// const addNote = req.body;
-// addNote.id = id();
+
 
 const addNote = {
     title : req.body.title,
