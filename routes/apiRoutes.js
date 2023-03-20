@@ -3,16 +3,16 @@ const { default: ShortUniqueId } = require("short-unique-id");
 const id = new ShortUniqueId ({length:7})
 const router = require("express").Router();
 
-// // To read db.json file and return all saved notes as JSON
-// router.get("/api/notes", (req,res) => {
-// const data = fs.readFileSync("./db.db.json");
-// res.json(JSON.parse(data));
-// });
-
 // To read db.json file and return all saved notes as JSON
 router.get("/api/notes", (req,res) => {
-readFromFile("./db/db.json").then((data) => res.json(JSON.parse(data)));
+const data = fs.readFileSync("./db.db.json");
+res.json(JSON.parse(data));
 });
+
+// // To read db.json file and return all saved notes as JSON
+// router.get("/api/notes", (req,res) => {
+// readFromFile("./db/db.json").then((data) => res.json(JSON.parse(data)));
+// });
 
 
 
