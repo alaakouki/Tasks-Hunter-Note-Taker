@@ -12,6 +12,9 @@ Organize your tasks and track them till you complete them.
 ## Mock-up
  Tasks Hunter Note Taker GitHub repo URL:
  https://github.com/alaakouki/Tasks-Hunter-Note-Taker
+ 
+ Tasks Hunter Note Taker - Heroku app page URL:
+ https://tasks-hunter-note-taker.herokuapp.com
 
 The following images is how Tasks Hunter NOte Taker webpage shows to
 users on desktop screens:
